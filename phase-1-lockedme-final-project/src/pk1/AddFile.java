@@ -10,7 +10,7 @@ import java.io.IOException;  // Import the IOException class to handle errors
 public class AddFile {
 	public static void addFiles() {
 		try {
-			System.out.println("Please enter the text document file name ending in .txt"); 
+			System.out.println("Please enter the file name."); 
 			Scanner enterFile = new Scanner(System.in);
 			String name = enterFile.nextLine();
 					
