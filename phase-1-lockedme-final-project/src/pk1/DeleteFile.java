@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
+import options.ReturnExitOptions;
+
 public class DeleteFile {
 	public static void deleteFiles() {
 			System.out.println("Please enter the full file name you would like to delete."); 
@@ -16,7 +18,7 @@ public class DeleteFile {
             else
                 System.out.println("File could not be deleted because the file doesn't exist.");
             
-            Welcome.welcomeOptions();
+            ReturnExitOptions.returnExitOptions();
 	}
 	
 	

@@ -3,6 +3,8 @@ package pk1;
 import java.io.File;
 import java.util.Scanner;
 
+import options.ReturnExitOptions;
+
 public class SearchFile {
 	public static void searchFiles() {
         
@@ -17,7 +19,7 @@ public class SearchFile {
         int flag = 0; 
         if (flist == null) { 
             System.out.println("Empty directory."); 
-            Welcome.welcomeOptions();
+            ReturnExitOptions.returnExitOptions();
         } 
         else { 
   
@@ -27,14 +29,14 @@ public class SearchFile {
                 if (filename.equalsIgnoreCase(name)) { 
                     System.out.println(filename + " File Found"); 
                     flag = 1; 
-                    Welcome.welcomeOptions();
+                    ReturnExitOptions.returnExitOptions();
                 } 
             } 
         } 
   
         if (flag == 0) { 
             System.out.println("File Not Found"); 
-            Welcome.welcomeOptions();
+            ReturnExitOptions.returnExitOptions();
         } 
         
     } 
