@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"pk1","l":"AddFile"},{"l":"All Classes","u":"allclasses-index.html"},{"p":"pk1","l":"DeleteFile"},{"p":"options","l":"FileUpdateOptions"},{"p":"pk1","l":"List"},{"p":"options","l":"Main"},{"p":"options","l":"ReturnExitOptions"},{"p":"pk1","l":"SearchFile"},{"p":"options","l":"Welcome"}];updateSearchResults();
