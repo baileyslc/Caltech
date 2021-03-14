@@ -10,11 +10,26 @@ public class App
     {
     	try {
     		
+//    		Define the URL to connect
+    		String urlToConnect = "jdbc:mysql://localhost:3306/simplilearn_licia";
+    		
+//    		Define the username for db to connect
+    		String dbUserName = "root";
+    		
+//    		Define the password
+    		String dbUserPassword = "";
+    		
+//    		Define the driver for the database
+    		String mySqlDriver = "com.mysql.cj.jdbc.Driver";
+    		
 //        	Load the Driver
-			Class.forName("com.mysql.cj.jdbc.Driver");
+			Class.forName(mySqlDriver);
 			
 //			Try to establish the connection
-			Connection dbCon = DriverManager.getConnection("jdbc:mysql://localhost:3306/simplilearn_licia", "root", "");
+			Connection dbCon = DriverManager.getConnection(urlToConnect, dbUserName, dbUserPassword);
+			
+			
+//			System.out.println("Successfully connected to the database...");
 			
 			System.out.println("Great job! You are connected to the DB!");
     		
